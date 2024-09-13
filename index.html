@@ -3,75 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InNuage Website</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inNuage - Consulting Services</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
+
+    <!-- Header -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>inNuage Consulting</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to InNuage</h1>
-        <p>We offer consulting services for a broad range of industries.</p>
+    <section id="hero">
+        <div class="container">
+            <h2>Innovative Cloud Solutions for Your Business</h2>
+            <p>From architecture to transformation, we provide the expertise to accelerate your digital journey.</p>
+        </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li><a href="#landing-zones">Landing Zones</a></li>
-            <li><a href="#security">Security</a></li>
-            <li><a href="#migration">Workloads Migration</a></li>
-            <!-- Add more services here -->
-        </ul>
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Landing Zones</h3>
+                    <p>Architecture for AWS, GCP, and Azure, ensuring a scalable and secure foundation for your cloud operations.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Security</h3>
+                    <p>Governance, audits, certifications, and architecture to protect your assets in the cloud or on-premises.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Migration</h3>
+                    <p>Seamless migration of workloads between on-premises and cloud environments.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Transformation</h3>
+                    <p>Serverless and microservices architectures to modernize your applications.</p>
+                </div>
+                <div class="service-item">
+                    <h3>DevSecOps</h3>
+                    <p>Integrate security into every stage of development for more secure and agile workflows.</p>
+                </div>
+                <div class="service-item">
+                    <h3>SRE & Operations</h3>
+                    <p>Improve reliability and operational efficiency with our Site Reliability Engineering and Operations expertise.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Process Restructuring</h3>
+                    <p>Optimize and restructure your business processes to improve efficiency and outcomes.</p>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <!-- Service Details Section -->
-    <div id="landing-zones" class="service-detail">
-        <h2>Landing Zones</h2>
-        <p>Architecture of Landing Zones for public cloud providers.</p>
-        <img src="https://images.pexels.com/photos/301497/pexels-photo-301497.jpeg" alt="Landing Zones Image" width="800px">
-    </div>
-
-    <!-- More Service Details Sections -->
-    <div id="security" class="service-detail">
-        <h2>Security</h2>
-        <p>Governance, Audits, Certification, Consultance, Architecture.</p>
-        <img src="https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg" alt="Security Image" width="800px">
-    </div>
-
-    <!-- More Service Details Sections -->
-    <div id="migration" class="service-detail">
-        <h2>Workloads Migration</h2>
-        <p>Migration of workloads from On-premises to the cloud or vice versa.</p>
-        <img src="https://images.pexels.com/photos/1646139/pexels-photo-1646139.jpeg" alt="Migration Image" width="800px">
-    </div>
 
     <!-- About Us Section -->
-    <section id="about-us" class="about-us">
-        <h2>About Us</h2>
-        <p>InNuage is a consulting company that offers services for a broad range of services for any sort of client</p>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At inNuage, we are a team of experienced consultants helping businesses optimize their cloud strategies, ensuring scalability, security, and cost-efficiency. Our goal is to enable seamless cloud transformation and operational excellence.</p>
+        </div>
     </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact-us" class="contact-us">
-        <h2>Get in Touch</h2>
-        <p>Contact us to learn more about our services and how we can help you.</p>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For inquiries and consulting services, get in touch with us.</p>
+            <a href="mailto:info@innuage.com" class="contact-btn">Email Us</a>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 InNuage. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 inNuage. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@cloudflare/pages@1.0.1/dist/index.min.js"></script>
 </body>
 </html>
